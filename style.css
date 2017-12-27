@@ -1,0 +1,125 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #F5F5F5;
+}
+.add_book {
+	background-color: #C5C5C5;
+	color: #EDEDED;
+	border: none;
+	width: 193px;
+	height: 40px;
+	font-size: 15px;
+	display: block;
+}
+input {
+	padding-left: 10px;
+}
+.general_page {
+	margin: 55px;
+}
+table {
+	width: 630px;
+	margin-top: 30px;
+	border-collapse: collapse;
+	background-color: white;
+}
+tr {
+	border-bottom: 1px solid #F5F5F5;
+	height: 124.4px;
+}
+.first-column {
+	width: 105px;
+}
+.third-column {
+	width: 50px;
+}
+.head_name{
+	margin: 0;
+	font-size: 20px;
+	color: #2D2D2D;
+	line-height: 20px;
+}
+.author{
+	margin: 4px 0;
+	font-size: 13px;
+	color: #505050;
+}
+.year{
+	margin: 0;
+	font-size: 13px;
+	color: #505050;
+}
+button.edit, button.del {
+	color: #9E9E9E;
+	background-color: white;
+	border: 1px solid #C0C0C0;
+	font-size: 11px;
+	height: 23px;
+	width: 105px;
+	margin-bottom: 7px;
+	margin-right: 15px;
+}
+.book_img {
+	height: 100px;
+	width: 70px;
+	margin: 9px 0 9px 15px;
+}
+.add_edit_book_div {
+	margin: 55px;
+	position: absolute;
+	top: 109px;
+}
+.content_addBook {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 630px;
+	height: 500px;
+	margin-top: 30px;
+	background-color: white;
+	padding: 35px;
+	display: none;
+}
+.addBook_P {
+	font-size: 12px;
+	margin: 35px 0 5px 0;
+}
+.input_add_name, .input_edit_name, 
+.input_add_author, .input_edit_author,
+.input_add_year, .input_edit_year,
+.input_add_src, .input_edit_src {
+	height: 22px;
+	width: 530px;
+	margin-left: 5px;
+}
+.input_add_year, .input_edit_year {
+	height: 22px;
+	width: 45px;
+	margin-left: 5px;
+}
+.button_save_add, .button_save_edit{
+	font-size: 15px;
+	height: 40px;
+	width: 130px;
+	background-color: #C9C9C9;
+	color: #F5F5F5;
+	border: none;
+	margin: 30px 7px 0 5px;
+}
+.button_esc{
+	font-size: 15px;
+	height: 40px;
+	width: 130px;
+	background-color: #EEEEEE;
+	color: #B3B3B3;
+	border: none;
+}
+.content_editBook {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 630px;
+	height: 500px;
+	margin-top: 30px;
+	background-color: white;
+	padding: 35px;
+	display: none;
+}

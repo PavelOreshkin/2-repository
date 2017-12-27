@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<title>Книжная полка</title>
+</head>
+<body>
+	<div class="general_page">
+		<h1 style="font-size: 37px; font-weight: normal;">Книжная полка</h1>
+		<button class="add_book" type="button">Добавить книгу</button>
+		<table>
+			<tr id="tr1">
+				<td class="first-column">
+					<img class="book_img" src="https://ozon-st.cdn.ngenix.net/multimedia/1016412966.jpg" alt="book img">
+				</td>
+				<td>
+					<p class="head_name">JavaScript и Juery</p>
+					<p class="author">Дэвид Сойер Макфарланд</p>
+					<p class="year"><span class="number_year">2016</span>г.</p>
+				</td>
+				<td class="third-column">
+					<button class="edit" type="button" onclick="editRow('tr1')">Редактировать</button>
+					<button class="del" type="button" onclick="deleteRow('tr1')">Удалить</button>
+				</td>
+			</tr>
+			<tr id="tr2">
+				<td class="first-column">
+					<img class="book_img" src="https://ozon-st.cdn.ngenix.net/multimedia/1011395255.jpg" alt="book img">
+				</td>
+				<td>
+					<p class="head_name">Изучаем программирование<br> на JavaScript</p>
+					<p class="author">Эрик Фримен, Элизабет Робсон</p>
+					<p class="year"><span class="number_year">2017</span>г.</p>
+				</td>
+				<td class="third-column">
+					<button class="edit" type="button" onclick="editRow('tr2')" ref_id="tr2">Редактировать</button>
+					<button class="del" type="button" onclick="deleteRow('tr2')">Удалить</button>
+				</td>
+			</tr>
+			<tr id="tr3">
+				<td class="first-column">
+					<img class="book_img" src="https://ozon-st.cdn.ngenix.net/multimedia/1007123068.jpg" alt="book img">
+				</td>
+				<td>
+					<p class="head_name">Секреты JavaScript ниндзя</p>
+					<p class="author">Джон Резиг, Беэр Бибо</p>
+					<p class="year"><span class="number_year">2017</span>г.</p>
+				</td>
+				<td class="third-column">
+					<button class="edit" type="button" onclick="editRow('tr3')" ref_id="tr3">Редактировать</button>
+					<button class="del" type="button" onclick="deleteRow('tr3')">Удалить</button>
+				</td>
+			</tr>
+			<tr id="tr4">
+				<td class="first-column">
+					<img class="book_img" src="https://ozon-st.cdn.ngenix.net/multimedia/1015269939.jpg" alt="book img">
+				</td>
+				<td>
+					<p class="head_name">ES6 и не только</p>
+					<p class="author">Кайл Симпсон</p>
+					<p class="year"><span class="number_year">2017</span>г.</p>
+				</td>
+				<td class="third-column">
+					<button class="edit" type="button" onclick="editRow('tr4')" ref_id="tr4">Редактировать</button>
+					<button class="del" type="button" onclick="deleteRow('tr4')">Удалить</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="add_edit_book_div">
+		<div class="content_addBook">
+			<form id="form_add" action="123.php">
+				<h2 style="margin: 0;">Добавить книгу</h2>
+				<p class="addBook_P">Наименование</p>
+				<input class="input_add_name" type="text" name="name">
+				<p class="addBook_P">Автор</p>
+				<input class="input_add_author" type="text" name="author">
+				<p class="addBook_P">Год выпуска</p>
+				<input class="input_add_year" type="number" max="2017" name="year">
+				<p class="addBook_P">Изображение</p>
+				<input class="input_add_src" type="text" name="img">
+				<input class="button_save_add" type="button" value="Сохранить">
+				<button class="button_esc" type="button">Отменить</button>
+			</form>
+		</div>
+	</div>
+	<div class="add_edit_book_div">
+		<div class="content_editBook">
+			<form id="form_edit" action="345.php">
+				<h2 style="margin: 0;">Редактирование книги</h2>
+				<p class="addBook_P">Наименование</p>
+				<input class="input_edit_name" type="text" name="name">
+				<p class="addBook_P">Автор</p>
+				<input class="input_edit_author" type="text" name="author">
+				<p class="addBook_P">Год выпуска</p>
+				<input class="input_edit_year" type="number" max="2017" name="year">
+				<p class="addBook_P">Изображение</p>
+				<input class="input_edit_src" type="text" name="img">
+				<input class="button_save_edit" type="button" value="Сохранить">
+				<button class="button_esc" type="button">Отменить</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
